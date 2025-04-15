@@ -3,8 +3,8 @@
 This project is for the KU Spring 2025 course "Computer Science for Biology" (BIOL 505) taught by Dr. Jocelyn Colella. The goal for this project is to create the framework for a machine learning model that will go through human observations (i.e., still images) from GBIF (mainly from iNaturalist) to identify whether an individual is "brown", "white", or "molting" during the winter season. 
 ## Steps:
 1. Download GBIF data via API download
-	- Enter species
-	- Enter taxon key
+	- Enter species: Mustela nivalis,Mustela erminia,Mustela richardsonii,Vulpes lagopus,Lagopus leucura,Lagopus lagopus,Lagopus muta,Lepus americanus
+	- Enter taxon key: 5218987,5219019,9134203,5219303,5227717,2473421,5227679,2436794
 	- Enter user information
 	- Download species data for each species into associated folders
 		- BasisOfRecord is Human Observation
