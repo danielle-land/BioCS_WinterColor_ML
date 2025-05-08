@@ -8,7 +8,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ## Steps
 
-### 1. **Download GBIF Data via API**
+## 1. **Download GBIF Data via API**
 - **Relevant script:** `01_download_GBIF_data/01.download_GBIF_data.sh`
 - Prompts for:
   - Species (e.g., `Mustela nivalis, Mustela erminia, Mustela richardsonii, Vulpes lagopus, Lagopus leucura, Lagopus lagopus, Lagopus muta, Lepus americanus`)
@@ -20,7 +20,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-### 2. **Clean Data**
+## 2. **Clean Data**
 - **Scripts (in `02_clean_GBIF_data/`)**:
   - `01.GBIF_mm_duplicatesRemoved.sh`
     - Uses files from `01_download_GBIF_data/`
@@ -35,7 +35,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-### 3. **Download, Rename, and Resize All Images**
+## 3. **Download, Rename, and Resize All Images**
 - **Scripts (in `03_images/`)**:
   - `01.GBIF_download_images.sh`
     - Creates species folders
@@ -48,7 +48,7 @@ The goal is to create the framework for a machine learning model that analyzes h
   - `03.down_res.py` (run via `03.RUN_down_res.sh`)
     - Crops and downsamples images to standardized size
 
-## **Scoring Images**
+### **Scoring Images**
 - All images must be centered and contain **only one animal**
 - Use the following standardized categories:
   - `White`
@@ -58,11 +58,11 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-### 4. **Run Scored Images Through a Transferred ML Model**
+## 4. **Run Scored Images Through a Transferred ML Model**
 - **Script:** `04_machine_learning/01.model_transfer_learning.py` (run via `01.RUN_model.sh`)
 - Applies transfer learning with MobileNetV2 to classify coat color
 
-## **Modeling**
+### **Modeling**
 - Dataset split (by species & coat color: 33 categories):
   - 80% training
   - 10% validation
@@ -75,7 +75,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 - **Loss Function:** Categorical Crossentropy
 - **Data Augmentation:** Horizontal flip, random rotation
 
-## **Visualize Model Efficiency**
+### **Visualize Model Efficiency**
 - **Scripts (in `04_machine_learning/`)**:
   - `02.evaluate_model_plots.py`
     - Creates a confusion matrix
