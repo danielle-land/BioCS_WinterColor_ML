@@ -1,0 +1,17 @@
+name: snowmen
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - opencv
+  - pillow
+  - keras
+  - tensorflow
+  - r-base
+  - matplotlib
+  - scipy
+  - seaborn
+  - scikit-learn
+prefix: /home/d135l135/.conda/envs/snowmen
