@@ -48,24 +48,7 @@ The goal is to create the framework for a machine learning model that analyzes h
   - `03.down_res.py` (run via `03.RUN_down_res.sh`)
     - Crops and downsamples images to standardized size
 
----
-
-### 4. **Run Scored Images Through a Transferred ML Model**
-- **Script:** `04_machine_learning/01.model_transfer_learning.py` (run via `01.RUN_model.sh`)
-- Applies transfer learning with MobileNetV2 to classify coat color
-
----
-
-### 5. **Visualize Model Efficiency**
-- **Scripts (in `04_machine_learning/`)**:
-  - `02.evaluate_model_plots.py`
-    - Creates a confusion matrix
-  - `03.plot_training_history.py`
-    - Plots model accuracy and loss over time
-
----
-
-## 6. **Scoring Images**
+## **Scoring Images**
 - All images must be centered and contain **only one animal**
 - Use the following standardized categories:
   - `White`
@@ -75,7 +58,11 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-## 7. **Modeling**
+### 4. **Run Scored Images Through a Transferred ML Model**
+- **Script:** `04_machine_learning/01.model_transfer_learning.py` (run via `01.RUN_model.sh`)
+- Applies transfer learning with MobileNetV2 to classify coat color
+
+## **Modeling**
 - Dataset split (by species & coat color: 33 categories):
   - 80% training
   - 10% validation
@@ -87,3 +74,10 @@ The goal is to create the framework for a machine learning model that analyzes h
 - **Optimizer:** Adam (`lr=1e-4`)
 - **Loss Function:** Categorical Crossentropy
 - **Data Augmentation:** Horizontal flip, random rotation
+
+## **Visualize Model Efficiency**
+- **Scripts (in `04_machine_learning/`)**:
+  - `02.evaluate_model_plots.py`
+    - Creates a confusion matrix
+  - `03.plot_training_history.py`
+    - Plots model accuracy and loss over time
