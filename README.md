@@ -65,7 +65,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-## **Scoring Images**
+## 6. **Scoring Images**
 - All images must be centered and contain **only one animal**
 - Use the following standardized categories:
   - `White`
@@ -75,7 +75,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 
 ---
 
-## **Modeling**
+## 7. **Modeling**
 - Dataset split (by species & coat color: 33 categories):
   - 80% training
   - 10% validation
