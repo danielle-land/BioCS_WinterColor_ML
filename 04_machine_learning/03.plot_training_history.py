@@ -37,7 +37,7 @@ plt.ylabel("Accuracy")
 plt.title("Model Accuracy")
 plt.legend()
 plt.savefig("accuracy_plot.png", dpi=300)
-print("✅ Saved: accuracy_plot.png")
+print("Saved: accuracy_plot.png")
 
 # Plot loss
 plt.figure()
@@ -48,5 +48,5 @@ plt.ylabel("Loss")
 plt.title("Model Loss")
 plt.legend()
 plt.savefig("loss_plot.png", dpi=300)
-print("✅ Saved: loss_plot.png")
+print("Saved: loss_plot.png")
 
