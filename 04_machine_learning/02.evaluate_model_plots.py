@@ -15,9 +15,9 @@ IMG_SIZE = (256, 256)
 BATCH_SIZE = 32
 # ==============
 
-print("📦 Loading model...")
+print("Loading model...")
 model = load_model(model_path)
-print("✅ Model loaded!")
+print(" Model loaded!")
 
 # Load validation data
 datagen = ImageDataGenerator(rescale=1./255)
@@ -49,14 +49,14 @@ disp.plot(cmap='Blues', xticks_rotation=45, ax=ax)
 plt.title("Confusion Matrix")
 plt.tight_layout()
 plt.savefig("confusion_matrix.png")
-print("📊 Saved: confusion_matrix.png")
+print("Saved: confusion_matrix.png")
 
 # Classification report
-print("🧾 Classification Report:")
+print("Classification Report:")
 report = classification_report(y_true, y_pred, target_names=present_class_names, labels=labels_in_val)
 print(report)
 
 with open("classification_report.txt", "w") as f:
     f.write(report)
-print("📄 Saved: classification_report.txt")
+print("Saved: classification_report.txt")
 
