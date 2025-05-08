@@ -36,6 +36,7 @@ The goal is to create the framework for a machine learning model that analyzes h
 ---
 
 ## 3. **Download, Rename, and Resize All Images**
+- Ensure to install python modules listed in `environment.yml`
 - **Scripts (in `03_images/`)**:
   - `01.GBIF_download_images.sh`
     - Creates species folders
@@ -49,6 +50,7 @@ The goal is to create the framework for a machine learning model that analyzes h
     - Crops and downsamples images to standardized size
 
 ### **Scoring Images**
+- Create a new column 1 in the metadata file called "color" to hold scores
 - All images must be centered and contain **only one animal**
 - Use the following standardized categories:
   - `White`
